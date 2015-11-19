@@ -1,6 +1,13 @@
 package ProtoAlpha;
+import java.io.File;
 import java.util.Scanner;
 import java.util.Date;
+import org.w3c.dom.Document;
+import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
 public class commandLine {
 
 	public static void main(String[] args) {
@@ -39,10 +46,13 @@ public static void logIn(){
 		String revisionHistory = "history";
 		String revisionGeography = "geography";
 		String revisionComputerScience = "computing";
+		String time = "time";
 		int historyCheck ;
 		int geogCheck;
 		int computingCheck;
-	
+			if(userInput.equals(time)){
+				System.out.println(ti);
+			}
 			if (userInput.equals(revisionHistory)){
 				System.out.println("Okay, what part of the A Level history course would you like help with");
 				historyCheck = 1;
